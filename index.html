@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css file link -->
     <link rel="stylesheet" href="./css/style.css">
+   
+    <!-- Google-font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Happy+Monkey&family=Roboto:ital,wght@0,400;1,300&family=Rouge+Script&family=Turret+Road&family=Vibes&family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+
     <!-- game title -->
     <title>Dice Game</title>
 </head>
+
 <body>
-    <div class="grid-container">
-        <div class="item1">Header</div>
-        <div class="item3">Main</div>  
-        <div class="item4">Right</div>
-        <div class="item5">Footer</div>
-      </div>
+    <main class="container">
+        <div class="grid-container">
+            <div class="header"><a href="#" style="color: green;">NEW GAME</a></div>
+
+            <div class="left">
+                <h1 class="name">PLAYER ONE</h1>
+                <!-- <br> -->
+                <h2 class="savedScore">_0_</h2>
+                <div class="currentLeft">
+                    <span style="color: white; background-color: blue;">Current Score</span>
+                    <h1 class="currentH1">0</h1>
+                </div>
+            </div>
+            <div class="right">
+                <h1 class="name">PLAYER TWO</h1>
+                <!-- <br> -->
+                <h2 class="savedScore">_0_</h2>
+                <div class="currentRight">
+                    <span style="color: white; background-color: red;">Current Score</span>
+                    <h1 class="currentH1">0</h1>
+                </div>
+
+            </div>
+            <div class="dice"></div>
+            <div class="buttons">
+                <button class="hold">hold</button>
+                <button class="scroll">scroll</button>
+            </div>
+
+            <div class="footer">Game Over</div>
+        </div>
+    </main>
+
     <!-- app.js file import -->
-      <script src="./app.js"></script>
+    <script src="./app.js"></script>
 </body>
+
 </html>
