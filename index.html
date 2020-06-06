@@ -6,44 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css file link -->
     <link rel="stylesheet" href="./css/style.css">
-   
     <!-- Google-font -->
     <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Happy+Monkey&family=Roboto:ital,wght@0,400;1,300&family=Rouge+Script&family=Turret+Road&family=Vibes&family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
 
     <!-- game title -->
     <title>Dice Game</title>
 </head>
-
 <body>
+    <!-- main container -->
     <main class="container">
+        <!-- grid container -->
         <div class="grid-container">
+            <!-- header -->
             <div class="header"><a href="#" style="color: green;">NEW GAME</a></div>
-
+            <!-- player one -->
             <div class="left">
                 <h1 class="name">PLAYER ONE</h1>
-                <!-- <br> -->
                 <h2 class="savedScore">_0_</h2>
                 <div class="currentLeft">
                     <span style="color: white; background-color: blue;">Current Score</span>
                     <h1 class="currentH1">0</h1>
                 </div>
             </div>
+            <!-- player two -->
             <div class="right">
                 <h1 class="name">PLAYER TWO</h1>
-                <!-- <br> -->
                 <h2 class="savedScore">_0_</h2>
                 <div class="currentRight">
                     <span style="color: white; background-color: red;">Current Score</span>
-                    <h1 class="currentH1">0</h1>
+                    <h1 class="currentH2">0</h1>
                 </div>
-
             </div>
+            <!-- dice -->
             <div class="dice"></div>
+            <!-- buttons -->
             <div class="buttons">
                 <button class="hold">hold</button>
                 <button class="scroll">scroll</button>
             </div>
-
+            <!-- footer -->
             <div class="footer">Game Over</div>
         </div>
     </main>
