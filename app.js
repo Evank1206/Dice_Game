@@ -1,32 +1,35 @@
 // variable for 2 players 0/1
 let activePlayer = 0;
 // variable holds main score
-let mainScore = [0, 0]
+let roundScore = [0, 0]
 // variable for temprery score
 let currentScore = 0;
 
 document.querySelector(".savedScore").textContent = "1";
-document.querySelector(".dice").style.display = "none";
-let currentScoreIncrement = 0;
+document.querySelector(".dice").style.display = "none"; // hiding the dice
+// let currentScoreIncrement = 0;
 
 document.querySelector(".scroll").addEventListener("click", function () {
-    // console.log("hey clicked");
-    // dice random numbers 1-6
-    let diceNum = Math.floor(Math.random() * 6) + 1;
-    // console.log(diceNum);
-    currentScoreIncrement = currentScoreIncrement + diceNum;
+    let diceNumber = Math.floor(Math.random() * 6) + 1; // get random dice number 1-6
+    console.log(diceNumber);
+    document.querySelector(".dice").src = "./img/" + "img-" + diceNumber + ".png"; // displaying diceImage
+    document.querySelector(".dice").style.display = "block"; // displaying dice
+    // document.querySelector(".savedScore").textContent = "7"; // displayig game Score
+    // condtional: accept number-"1", add random numbers and display the numbers in current score section
+    if(diceNumber !== 1){
+        currentScore = currentScore + diceNumber;  // add random number to in currentScore
+        document.querySelector(".currentH1").textContent = currentScore; // to DOM added currenScore
+    } else{ // if diceNumber === 1 is make score 0 switch to other player
+        console.log("this is second player");
+        
+        
+    }
     
-    // to dom current score player one
-    let diceImage = document.querySelector(".currentH1").textContent = currentScoreIncrement;
-    document.querySelector(".savedScore").textContent = "0";
-    // console.log(x);
-    document.querySelector(".dice").src = "img-" + diceImage + ".png";
-    document.querySelector(".dice").style.display = "block";
-   
- 
- 
+
 
 });
+
+
 
 // document.querySelector(".scroll").addEventListener("click", function () {
 
