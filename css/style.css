@@ -42,6 +42,16 @@ body{
     /* opacity: 0.6;
     transition: 3s; */
 }
+.active{
+    position: absolute;
+    width: 0.6em;
+    height: 0.6em;
+    border: solid green;
+    border-radius: 90%;
+    background-color: greenyellow;
+    top: 18.5%;
+   
+}
 .currentLeft, .currentRight{
     margin: 100px auto;
     background-color: orange;

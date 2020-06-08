@@ -16,18 +16,28 @@ document.querySelector(".scroll").addEventListener("click", function () {
     document.querySelector(".dice").style.display = "block"; // displaying dice
     // document.querySelector(".savedScore").textContent = "7"; // displayig game Score
     // condtional: accept number-"1", add random numbers and display the numbers in current score section
-    if(diceNumber !== 1){
+    if (diceNumber !== 1) {
         currentScore = currentScore + diceNumber;  // add random number to in currentScore
-        document.querySelector(".currentH1").textContent = currentScore; // to DOM added currenScore
-    } else{ // if diceNumber === 1 is make score 0 switch to other player
-        console.log("this is second player");
-        
-        
+        document.getElementById("current-" + activePlayer).textContent = currentScore; // to DOM added currenScore
+        holdFunction();
+    } else { // if diceNumber === 1 is erase the current score to 0
+        currentScore = 0;
+        document.getElementById("current-" + activePlayer).innerHTML = currentScore;  // erase the current score
+        activePlayer === 0 ? activePlayer = 1 : activePlayer = 0; // if active player dice equal to random number-"0" switch to player two, else switch to player one
+        document.getElementById("active-0").classList.toggle("active");
+        document.getElementById("active-1").classList.toggle("active");
     }
-    
-
 
 });
+
+document.querySelector(".hold").addEventListener("click", holdFunction);
+
+function holdFunction() {
+    currentScore.push(roundScore[0])
+
+}
+
+
 
 
 
