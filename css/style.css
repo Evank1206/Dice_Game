@@ -60,7 +60,7 @@ body{
     height: 100px;
     width: 140px;   
 }
-.savedScore{
+#savedScore{
     font-size: 100px;
     font-weight: lighter;
 }
