@@ -36,11 +36,11 @@ body{
     height: 600px;
     color: red;
 }
-.footer:hover{
+.footer{
     grid-area: footer;
-    background:#f4511e;
-    /* opacity: 0.6;
-    transition: 3s; */
+    /* background:#f4511e; */
+    opacity: 0.6;
+    /* transition: 3s; */
 }
 .active{
     position: absolute;
@@ -55,8 +55,8 @@ body{
 .currentLeft, .currentRight{
     margin: 100px auto;
     background-color: orange;
-    /* animation: shake 2s infinite;
-    animation-direction: alternate; */
+    animation: shake 2s infinite;
+    animation-direction: alternate;
     height: 100px;
     width: 140px;   
 }
@@ -64,14 +64,14 @@ body{
     font-size: 100px;
     font-weight: lighter;
 }
-/* @keyframes shake {
+@keyframes shake {
     0% {
       transform: skewY(25deg);
     }
     100% {
       transform: skewY(-25deg);
     }
-  } */
+  }
   .dice{
       width: 90px;
       height: 90px;
