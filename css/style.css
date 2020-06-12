@@ -52,6 +52,11 @@ body{
     top: 18.5%;
    
 }
+.player-0, .player-1{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: shake 2s infinite;
+    animation-direction: alternate;
+}
 .currentLeft, .currentRight{
     margin: 100px auto;
     background-color: orange;
