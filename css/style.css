@@ -1,6 +1,8 @@
 body{
     margin: 0 auto;
-    background-color: grey;
+    /* background-color: grey; */
+    background-image: url("../img/backgroundImage.jpg");
+    background-position: center;
     font-family: 'Roboto', sans-serif;
 }
 .container{
@@ -15,7 +17,9 @@ body{
       'left left left right right right'
       'footer footer footer footer footer footer';
     grid-gap: 2px;
-    background-color: #2196F3;
+    /* background-color: #2196F3; */
+    background: purple;
+    opacity: 0.9;
     padding: 10px;
   }
 .grid-container > div{
@@ -38,8 +42,8 @@ body{
 }
 .footer{
     grid-area: footer;
-    /* background:#f4511e; */
     opacity: 0.6;
+    color:black;
     /* transition: 3s; */
 }
 .active{
@@ -50,10 +54,9 @@ body{
     border-radius: 90%;
     background-color: greenyellow;
     top: 18.5%;
-   
+
 }
 .player-0, .player-1{
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
     animation: shake 2s infinite;
     animation-direction: alternate;
 }
@@ -142,10 +145,24 @@ body{
     }
     .currentLeft, .currentRight{
         margin: 70px auto;
-        /* text-align: center; */
-        background-color: orange;
-        /* height: 70px; */
-        width: 140px;
     }
+    .player-0, .player-1{
+       font-size: 25px;
+    }
+    #savedScore {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .buttons{
+        bottom: 43%;
+        left: 69%;         
+    }
+    .dice{
+        left: 29%;
+    }
+    /* .active{ under construction
+        top: 10.5%;
+        display: none;
+    } */
     
 }

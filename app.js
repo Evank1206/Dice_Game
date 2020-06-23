@@ -24,7 +24,7 @@ document.querySelector(".scroll").addEventListener("click", function () {
 // holding the current score and adding them
 document.querySelector(".hold").addEventListener("click", function () {
     // checking the score which reached 100
-    if (roundScore[activePlayer] >= 10) {//alert("CONGRATES! PlAYER TWO WINNER!");
+    if (roundScore[activePlayer] >= 100) {//alert("CONGRATES! PlAYER TWO WINNER!");
         activePlayer === 0 ? document.querySelector(".player-0")
             .innerHTML = "<h3>WINNER!</h3>" : document.querySelector(".player-1")
                 .innerHTML = "<h3>WINNER!</h3>";
