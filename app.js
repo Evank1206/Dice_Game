@@ -1,5 +1,5 @@
 // variable for 2 players 0/1 ; // variable holds main score ; // variable for temprery score
-let activePlayer, roundScore, currentScore
+let activePlayer, currentScore, roundScore;
 // new game called here // even can write newGame function here // but this time i just called here
 newGame();
 // dice Rolling function
@@ -17,8 +17,9 @@ document.querySelector(".scroll").addEventListener("click", function () {
         currentScore = 0;
         activePlayer === 0 ? activePlayer = 1 : activePlayer = 0; // if active player = "0" playerOne, switch to playerTwo, else switch to player one
         document.getElementById("current-" + activePlayer).textContent = currentScore;  // erase the current score
-        document.getElementById("active-0").classList.toggle("active");
-        document.getElementById("active-1").classList.toggle("active");
+        // red dot switchs for between active player
+        document.getElementById("active-0").classList.toggle("active"); // if there is active class, it's gonna REMOAVE  or if not then ADD
+        document.getElementById("active-1").classList.toggle("active"); // if there is active class, it's gonna REMOAVE  or if not then ADD
     }
 });
 // holding the current score and adding them
